@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        bg
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/a5d7d50019.js" crossorigin="anonymous"></script>
+
+    <style>
+        .lato {
+            'Lato',
+            sans-serif
+        }
+    </style>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+
+    <title>Document</title>
+</head>
+
+<body class="lato">
+    <header>
+        <nav>
+            <div class="navbar bg-[#F85559] text-white rounded-[600px] px-14 py-8">
+                <div class="navbar-start">
+                    <div class="dropdown">
+
+                        <ul tabindex="0" class="menu  flex flex-row  z-[1] ">
+                            <li><a class="text-lg">Home</a></li>
+                            <li><a class="text-lg">About Us</a></li>
+                            <li><a class="text-lg">Shop</a></li>
+                            <li><a class="text-lg">All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-center">
+                    <img src="images/logo.png" alt="logo">
+                    <h1 class="text-5xl font-bold">Fruit Burst</h1>
+                </div>
+                <div class="navbar-end">
+                    <div class="form-control flex flex-row bg-white rounded-[50px]">
+                        <input type="text" placeholder="Search" class="bg-transparent pl-7" />
+                        <button class="btn btn-ghost btn-circle">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                        </button>
+                    </div>
+
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- carousal -->
+        <section>
+            <div class="carousel w-vh mt-14 rounded-lg ">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="hero min-h-screen w-full" style="background-image: url(./images/banner1.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="text-white">
+                                <h1 class="mb-5 text-7xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                                <p class="mb-5 ">
+                                    We supply highly quality organic products
+                                </p>
+                                <button class="btn border-none text-white bg-[#F85559]">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="hero min-h-screen w-full" style="background-image: url(./images/banner2.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="text-white">
+                                <h1 class="mb-5 text-7xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                                <p class="mb-5">We supply highly quality organic products</p>
+                                <button class="btn border-none text-white bg-[#F85559]">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="hero min-h-screen w-full " style="background-image: url(./images/banner3.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="text-white">
+                                <h1 class="mb-5 text-7xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                                <p class="mb-5">We supply highly quality organic products</p>
+                                <button class="btn border-none text-white bg-[#F85559]">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="hero min-h-screen w-full" style="background-image: url(./images/banner4.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="text-white">
+                                <h1 class="mb-5 text-7xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                                <p class="mb-5">We supply highly quality organic products</p>
+                                <button class="btn border-none text-white bg-[#F85559]">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- deal of the day -->
+        <section class="text-center">
+            <div class="flex justify-end">
+                <div class="flex-1 text-start">
+                    <h2 class="text-5xl">Deal of the day</h2>
+                    <p class="text-base">
+                        Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                        Latin literature from 45 BC, making it over 2000 years old.
+                    </p>
+                </div>
+                <!-- timer -->
+                <div class="flex-1 ">
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max justify-end">
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:15;"></span>
+                            </span>
+                            days
+                        </div>
+                        <p class="text-4xl">:</p>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:10;"></span>
+                            </span>
+                            hours
+                        </div>
+                        <p class="text-4xl">:</p>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:24;"></span>
+                            </span>
+                            min
+                        </div>
+                        <p class="text-4xl">:</p>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:4;"></span>
+                            </span>
+                            sec
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cards -->
+            <div class="grid grid-cols-4 gap-6 my-12">
+                <!-- card 1 -->
+                <div>
+                    <div class="card  bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10 flex flex-col justify-center">
+                            <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                            <h3 class="text-2xl text-[#121212] mt-12">
+                                12.90$ - 18.85$
+                            </h3>
+                            <hr class="w-60 mt-6 ">
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="text-base">Apples</h2>
+                            <div class="rating rating-lg rating-half">
+                                <input type="radio" name="rating-10" class="rating-hidden" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-1"
+                                    checked />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-ghost text-lg text-[#F85559]">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div>
+                    <div class="card  bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10 flex flex-col justify-center">
+                            <img src="images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                            <h3 class="text-2xl text-[#121212] mt-12">
+                                12.90$ - 18.85$
+                            </h3>
+                            <hr class="w-60 mt-6 ">
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="text-base">Orange</h2>
+                            <div class="rating rating-lg rating-half">
+                                <input type="radio" name="rating-10" class="rating-hidden" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-1"
+                                    checked />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-ghost text-lg text-[#F85559]">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div>
+                    <div class="card  bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10 flex flex-col justify-center">
+                            <img src="images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                            <h3 class="text-2xl text-[#121212] mt-12">
+                                12.90$ - 18.85$
+                            </h3>
+                            <hr class="w-60 mt-6 ">
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="text-base">Red Dragon</h2>
+                            <div class="rating rating-lg rating-half">
+                                <input type="radio" name="rating-10" class="rating-hidden" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-1"
+                                    checked />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-ghost text-lg text-[#F85559]">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div>
+                    <div class="card  bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10 flex flex-col justify-center">
+                            <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                            <h3 class="text-2xl text-[#121212] mt-12">
+                                12.90$ - 18.85$
+                            </h3>
+                            <hr class="w-60 mt-6 ">
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="text-base">Banana</h2>
+                            <div class="rating rating-lg rating-half">
+                                <input type="radio" name="rating-10" class="rating-hidden" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-1"
+                                    checked />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-ghost text-lg text-[#F85559]">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn border-none text-white bg-[#F85559] ">Shop All</button>
+        </section>
+
+        <!-- team section -->
+        <section class="my-36">
+            <div class="hero min-h-screen " style="background-image: url(images/team.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div >
+                        <div class="text-white text-center">
+                            <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+                            <p class="mb-5 ">Contrary to popular belief, is not simply random text. It has roots
+                                in
+                                a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                            </p>
+                        </div>
+
+                        <div class="flex flex-row justify-between">
+                            <!-- team card 1 -->
+                            <div class="card   text-white">
+                                <figure class="px-10 pt-10">
+                                    <img src="images/member1.png" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">Awlad Hossain</h2>
+                                    <p>Fruits Expert</p>
+                                    <div class="card-actions gap-6">
+                                        <button class=""><i class="fa-brands fa-facebook"
+                                                style="color: #f85559;"></i></button>
+                                        <button class=""><i class="fa-brands fa-square-twitter"
+                                                style="color: #f85559;"></i></button>
+                                        <button class=""><i class="fa-brands fa-linkedin" style="color: #f85559;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- team card 2 -->
+                            <div class="card   text-white">
+                                <figure class="px-10 pt-10">
+                                    <img src="images/member2.png" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">Safia Chowdhury</h2>
+                                    <p>Fruits Expert</p>
+                                    <div class="card-actions gap-6">
+                                        <button class=""><i class="fa-brands fa-facebook"
+                                                style="color: #f85559;"></i></button>
+                                        <button class=""><i class="fa-brands fa-square-twitter"
+                                                style="color: #f85559;"></i></button>
+                                        <button class=""><i class="fa-brands fa-linkedin" style="color: #f85559;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- team card 3 -->
+                            <div class="card   text-white">
+                                <figure class="px-10 pt-10">
+                                    <img src="images/member3.png" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">Rokib Hossain</h2>
+                                    <p>Fruits Expert</p>
+                                    <div class="card-actions gap-6">
+                                        <button class=""><i class="fa-brands fa-facebook"
+                                                style="color: #f85559;"></i></button>
+                                        <button class=""><i class="fa-brands fa-square-twitter"
+                                                style="color: #f85559;"></i></button>
+                                        <button class=""><i class="fa-brands fa-linkedin" style="color: #f85559;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- team card 4 -->
+                            <div class="card   text-white">
+                                <figure class="px-10 pt-10">
+                                    <img src="images/member4.png" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">Chaity</h2>
+                                    <p>Fruits Expert</p>
+                                    <div class="card-actions gap-6">
+                                        <button class=""><i class="fa-brands fa-facebook"
+                                                style="color: #f85559;"></i></button>
+                                        <button class=""><i class="fa-brands fa-square-twitter"
+                                                style="color: #f85559;"></i></button>
+                                        <button class=""><i class="fa-brands fa-linkedin" style="color: #f85559;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- why chose us -->
+        
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
